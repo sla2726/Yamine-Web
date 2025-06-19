@@ -1,18 +1,10 @@
 import { useState, useEffect } from "react";
 import { AlignJustify, Sun, Moon } from "lucide-react";
+import ThemeAnimation from "./components/ThemeAnimation";
 
 function App() {
   // Light/Dark mode
   const [darkMode, setDarkMode] = useState(false);
-  const [isRotating, setIsRotating] = useState(false);
-
-  function toggleTheme() {
-    setIsRotating(true); // Rotação ativada
-    setTimeout(() => {
-      setDarkMode((prev) => !prev);
-      setIsRotating(false); // Rotação desativada
-    }, 300); // Tempo que vai girar
-  }
 
   useEffect(() => {
     if (darkMode) {
@@ -28,13 +20,8 @@ function App() {
   return (
     <div className="h-screen w-screen transition-all bg-snow text-black dark:bg-slate-900 dark:text-white">
       <div className="p-2 bg-blue-300 relative">
-        <button
-          onClick={toggleTheme}
-          className={`py-2 px-2 font-bold bg-darkBlue text-white dark:bg-snow dark:text-black rounded-md transition-transform duration-300 ${
-            isRotating ? "rotate-180" : ""
-          }`}
-        >
-          {darkMode ? <Moon /> : <Sun />}
+        <button onClick={() => setDarkMode((prev) => !prev)}>
+          <ThemeAnimation darkMode={darkMode} />
         </button>
 
         <button
