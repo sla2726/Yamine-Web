@@ -1,6 +1,9 @@
+import Embed from "../components/Embed";
+
 function formatWord(word) {
   return <span className="italic font-semibold">{word}</span>;
 }
+
 const economia = <span className="underline text-red-700">Economia</span>;
 
 function FeatureSection() {
@@ -27,15 +30,19 @@ function FeatureSection() {
       </section>
 
       {/* Textos de Explicação - Começo */}
-      <section className="font-raleway text-2xl font-bold italic text-darkBlue dark:text-blue-300">
+      <section className="font-raleway text-2xl  ml-5 mt-12 font-bold italic text-blue-600 dark:text-blue-300">
         <aside>Economia</aside>
       </section>
 
-      <section>
+      <section className="font-nunito text-xl font-semibold ml-5">
         <article>
-          A yamine tem um grande foco na {economia}, então coisas como{" "}
-          {formatWord("criptomoedas")}
+          A Yamine tem um grande foco na {economia}. Por isso, elementos como{" "}
+          {formatWord("criptomoedas")}, {formatWord("apostas")} e{" "}
+          {formatWord("batalhas")} estão entre as várias opções que você
+          encontrará por aqui!
         </article>
+
+        <Embed />
       </section>
     </div>
   );
