@@ -6,20 +6,17 @@ import FeatureSection from "./sections/FeatureSection";
 
 function App() {
   // Light/Dark mode
-  const [isLightMode, setIsLightMode] = useState(() => {
-    const saved = localStorage.getItem("theme");
-    return saved === "dark";
-  });
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    if (isLightMode) {
+    if (isDarkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  }, [isLightMode]);
+  }, [isDarkMode]);
 
   // Menu
   const [openMenu, setOpenMenu] = useState(false);
@@ -37,8 +34,8 @@ function App() {
         </h1>
 
         {/* Button dark/light theme */}
-        <button onClick={() => setIsLightMode((prev) => !prev)}>
-          <ThemeAnimation isLightMode={isLightMode} />
+        <button onClick={() => setIsDarkMode((prev) => !prev)}>
+          <ThemeAnimation isDarkMode={isDarkMode} />
         </button>
 
         {/* Button Menu */}
