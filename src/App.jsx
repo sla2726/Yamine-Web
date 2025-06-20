@@ -2,41 +2,43 @@ import { useState, useEffect } from "react";
 import { AlignJustify, CircleX, BotMessageSquare } from "lucide-react";
 import ThemeAnimation from "./components/ThemeAnimation";
 import MenuItems from "./components/MenuItems";
+import FeatureSection from "./sections/FeatureSection";
 
 function App() {
   // Light/Dark mode
-  const [darkMode, setDarkMode] = useState(() => {
+  const [isLightMode, setIsLightMode] = useState(() => {
     const saved = localStorage.getItem("theme");
     return saved === "dark";
   });
 
   useEffect(() => {
-    if (darkMode) {
+    if (isLightMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  }, [darkMode]);
+  }, [isLightMode]);
 
   // Menu
   const [openMenu, setOpenMenu] = useState(false);
 
+  // Encurtando
   const addBotUrl =
     "https://discord.com/oauth2/authorize?client_id=943330773916876820&scope=bot&permissions=8";
 
   return (
     <div className="h-screen w-screen transition-all bg-snow text-black dark:bg-slate-900 dark:text-white">
       <div className="p-2 bg-blue-300 relative">
-        {/* Textos principais */}
+        {/* Título */}
         <h1 className="text-2xl font-raleway font-extrabold absolute inset-0 flex justify-center items-center pointer-events-none">
           YAMINE
         </h1>
 
         {/* Button dark/light theme */}
-        <button onClick={() => setDarkMode((prev) => !prev)}>
-          <ThemeAnimation darkMode={darkMode} />
+        <button onClick={() => setIsLightMode((prev) => !prev)}>
+          <ThemeAnimation isLightMode={isLightMode} />
         </button>
 
         {/* Button Menu */}
@@ -63,7 +65,8 @@ function App() {
         </div>
       </div>
 
-      <section className="p-6 mx-auto max-w-xl space-y-2 flex flex-col">
+      {/* Textos de Apresentação */}
+      <section className="p-6 mt-6 mx-auto max-w-xl space-y-2 flex flex-col">
         <h2 className="text-2xl font-bold font-nunito text-left w-fit self-start">
           Apenas um bot do discord pronto para te ajudar!
         </h2>
@@ -79,6 +82,9 @@ function App() {
           Me adicione!
         </a>
       </section>
+
+      {/* Seção - Textos de explicação */}
+      <FeatureSection />
     </div>
   );
 }

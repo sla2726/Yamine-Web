@@ -10,12 +10,12 @@ const defaultConfig =
  *rotate-90: roda 90 graus
  */
 
-function AnimatedTheme({ darkMode }) {
+function AnimatedTheme({ isLightMode }) {
   return (
     <div className="relative w-8 h-8">
       <span
         className={`${defaultConfig} text-yellow-400 ${
-          darkMode
+          isLightMode
             ? "opacity-0 -rotate-90 -translate-x-full"
             : "opacity-100 rotate-0 translate-x-0"
         }`}
@@ -26,7 +26,7 @@ function AnimatedTheme({ darkMode }) {
       <span
         className={`${defaultConfig} text-blue-900
       ${
-        darkMode
+        isLightMode
           ? "opacity-100 rotate-0 translate-x-0"
           : "opacity-0 rotate-90 translate-x-full"
       }`}
