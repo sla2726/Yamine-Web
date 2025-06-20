@@ -35,14 +35,11 @@ function formatTime(totalSeconds) {
 
 function Embed() {
   // Fazendo a contagem - "Bitcoin(unidade):"
-  const [bitcoinValue, setBitcoinValue] = useState(2000);
+  const [bitcoinValue, setBitcoinValue] = useState(1000);
   useEffect(() => {
     const bitcoinInterval = setInterval(() => {
-      setBitcoinValue((prevValue) => {
-        const change = (Math.random() - 0.5) * 1000;
-        return Math.max(0, prevValue + change);
-      });
-    }, 2000);
+      setBitcoinValue((prevValue) => prevValue + 10);
+    }, 1);
     return () => clearInterval(bitcoinInterval);
   }, []);
 
@@ -72,12 +69,16 @@ function Embed() {
           <h2>Abaixo está o valor atual do {formatWord("Bitcoin")}:</h2>
           <div className="flex gap-2">
             <p className="underline">Bitcoin(unidade):</p>
-            <span>{bitcoinValue.toFixed(2)}</span>
+            <span className="italic text-white dark:text-black">
+              {bitcoinValue.toFixed(2)}
+            </span>
           </div>
           <div className="flex gap-1">
             <p className="underline">Última alteração:</p>
             <span className="italic">Há</span>
-            <span className="text-red-700 italic">{formatTime(seconds)}</span>
+            <span className="italic text-white dark:text-black">
+              {formatTime(seconds)}
+            </span>
           </div>
         </section>
       </div>
