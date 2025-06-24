@@ -1,10 +1,8 @@
 import { AlignJustify, CircleX, BotMessageSquare, House } from "lucide-react";
-import ThemeAnimation from "../components/ThemeAnimation";
-import MenuItems from "../components/MenuItems";
 import FeatureSection from "../sections/FeatureSection";
 import CreditsSection from "../sections/CreditsSection";
 
-function App() {
+function Home() {
   // Encurtando
   const addBotUrl =
     "https://discord.com/oauth2/authorize?client_id=943330773916876820&scope=bot&permissions=8";
@@ -49,4 +47,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

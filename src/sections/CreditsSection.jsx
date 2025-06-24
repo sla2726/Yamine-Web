@@ -70,7 +70,7 @@ function CreditsSection() {
         </div>
         {/* Termos e Diretrizes */}
         <h1 className="font-oswald font-bold text-2xl pt-2">
-          Termos e Diretrizes
+          Termos de Uso
         </h1>
         <div className="grid grid-cols font-sharetech font-semibold text-xl">
           <p>{short_spa("/termService", "Termos de Serviço")}</p>

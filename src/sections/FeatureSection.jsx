@@ -52,7 +52,7 @@ function FeatureSection() {
       {/* Falando sobre a economia do bot*/}
       <section className="font-sharetech font-semibold text-xl ml-5">
         <article>
-          A Yamine tem um grande foco na {economia}. Por isso, elementos como{" "}
+          O Yamine tem um grande foco na {economia}. Por isso, elementos como{" "}
           {formatWord("criptomoedas")}, {formatWord("apostas")} e{" "}
           {formatWord("batalhas")} estão entre as várias opções que você
           encontrará por aqui!
