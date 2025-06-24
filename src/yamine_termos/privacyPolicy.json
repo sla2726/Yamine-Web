@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Informações Coletadas",
+    "text": "A Yamine não coleta dados pessoais sensíveis, como endereço de e-mail ou informações de login do Discord. As informações coletadas se limitam a:\n\n- Dados relacionados ao uso do bot, como interações com comandos e logs de atividade.\n- Informações básicas do Discord, como sua tag de usuário e ID, necessárias para o funcionamento de certos recursos."
+  },
+  {
+    "id": 2,
+    "title": "Uso das Informações",
+    "text": "As informações coletadas são utilizadas exclusivamente para:\n\n- Garantir o funcionamento adequado da Yamine e de seus recursos.\n- Realizar análises para melhorar a experiência do usuário.\n- Enviar notificações ou mensagens relacionadas a atualizações importantes do bot."
+  },
+  {
+    "id": 3,
+    "title": "Compartilhamento de Informações",
+    "text": "A Yamine não compartilha informações dos usuários com terceiros, a menos que seja exigido por lei ou com o consentimento explícito do próprio usuário."
+  },
+  {
+    "id": 4,
+    "title": "Segurança das Informações",
+    "text": "Adotamos medidas técnicas e organizacionais para proteger os dados coletados contra acesso, alteração ou divulgação não autorizados. Apesar de nossos esforços, nenhum sistema é totalmente infalível, e recomendamos que você também tome precauções ao utilizar serviços online."
+  },
+  {
+    "id": 5,
+    "title": "Alterações na Política de Privacidade",
+    "text": "Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças nos serviços ou práticas da Yamine. A versão mais recente será publicada aqui, e notificações poderão ser enviadas caso ocorram alterações significativas."
+  },
+  {
+    "id": 6,
+    "title": "Consentimento e Contato",
+    "text": "Ao utilizar a Yamine, você consente com o processamento de informações conforme descrito nesta Política de Privacidade. Em caso de dúvidas ou preocupações sobre nossas práticas, entre em contato conosco para esclarecimentos."
+  }
+]

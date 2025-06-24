@@ -1,10 +1,15 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: '0.0.0.0',
+    host: true, // permite acesso externo
+    strictPort: true, // evita que o Vite mude de porta automaticamente
+    watch: {
+      usePolling: true // força a escuta de arquivos a funcionar bem em ambientes virtuais
+    },
+    // Libera o host padrão da Replit
+    allowedHosts: ['.replit.dev']
   }
-})
+});
