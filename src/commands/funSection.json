@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"name": "ship",
+		"description": "Combina dois usuários e exibe o nível de afinidade entre eles."
+	},
+	{
+		"id": 2,
+		"name": "roblox",
+		"description": "Mostra o perfil do Roblox vinculado ao usuário mencionado, com informações básicas."
+	},
+	{
+		"id": 3,
+		"name": "escolher",
+		"description": "Escolhe aleatoriamente uma das opções fornecidas por você."
+	},
+	{
+		"id": 4,
+		"name": "8ball",
+		"description": "Responde sua pergunta com uma resposta aleatória no estilo 'bola 8 mágica'."
+	}
+]

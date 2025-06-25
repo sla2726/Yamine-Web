@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "configurar rpg",
+    "description": "Define suas configurações iniciais no RPG, como gênero."
+  },
+  {
+    "id": 2,
+    "name": "casar",
+    "description": "Envia um pedido de casamento para outro usuário."
+  },
+  {
+    "id": 3,
+    "name": "divorciar",
+    "description": "Encerra seu casamento atual."
+  },
+  {
+    "id": 4,
+    "name": "curtir",
+    "description": "Curta o perfil de alguém."
+  }
+]

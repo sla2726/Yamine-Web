@@ -1,13 +1,41 @@
 import CommandCard from "../components/CommandCard";
 import economySection from "../commands/economySection.json";
+import utilitiesSection from "../commands/utilitiesSection.json";
+import funSection from "../commands/funSection.json";
+import rpgSection from "../commands/rpgSection.json";
 
 function Commands() {
 	{
-		/* Seções de Economia */
+		/* Seções de Economia - Ordem alfabética */
 	}
-	const defaultEconomyCommands = economySection.filter((cmd) => cmd.id <= 16);
-	const criptoEconomyCommands = economySection.filter((cmd) => cmd.id >= 17);
-	const betEconomyCommands = economySection.filter((cmd) => cmd.id >= 22);
+	const defaultEconomyCommands = economySection
+		.filter((cmd) => cmd.id <= 16)
+		.sort((a, b) => a.name.localeCompare(b.mame));
+	const criptoEconomyCommands = economySection
+		.filter((cmd) => cmd.id >= 17)
+		.sort((a, b) => a.name.localeCompare(b.mame));
+	const betEconomyCommands = economySection
+		.filter((cmd) => cmd.id >= 22)
+		.sort((a, b) => a.name.localeCompare(b.name));
+
+	{
+		/* Seção de Utilitários - Ordem alfabética */
+	}
+	const defaultUtilitiesSection = utilitiesSection.sort((a, b) =>
+		a.name.localeCompare(b.name),
+	);
+	{
+		/* Seção de Diversão - Ordem alfabética */
+	}
+	const defaultFunSection = funSection.sort((a, b) =>
+		a.name.localeCompare(b.name),
+	);
+	{
+	/* Seção de RPG - Ordem alfabética */
+	}
+	const defaultRPGSection = rpgSection.sort((a, b) =>
+		a.name.localeCompare(b.name),
+	);
 
 	return (
 		<section className="min-h-screen w-screen bg-snow text-black dark:bg-slate-900 dark:text-white">
@@ -24,7 +52,6 @@ function Commands() {
 						description={cmd.description}
 						category="Economia"
 						categoryColor="bg-emerald-700"
-						bgColor="bg-gray-400 dark:bg-slate-500"
 						bordColor="border-emerald-500"
 					/>
 				))}
@@ -36,7 +63,6 @@ function Commands() {
 						description={cmd.description}
 						category="Economia - Criptomoedas"
 						categoryColor="bg-emerald-900"
-						bgColor="bg-slate-500"
 						bordColor="border-emerald-500"
 					/>
 				))}
@@ -48,11 +74,53 @@ function Commands() {
 						description={cmd.description}
 						category="Economia - Apostas"
 						categoryColor="bg-fuchsia-900"
-						bgColor="bg-slate-500"
 						bordColor="border-emerald-500"
 					/>
 				))}
 			</article>
+
+			<article className="grid grid-cols-1 p-2 pt-6 gap-6">
+				{/* Utilitários */}
+				{defaultUtilitiesSection.map((cmd) => (
+					<CommandCard
+						key={cmd.id}
+						name={cmd.name}
+						description={cmd.description}
+						category="Utilitários"
+						categoryColor="bg-blue-400"
+						bordColor="border-blue-500"
+					/>
+				))}
+			</article>
+
+			<article className="grid grid-cols-1 p-2 pt-6 gap-6">
+				{/* Diversão */}
+				{defaultFunSection.map((cmd) => (
+					<CommandCard
+						key={cmd.id}
+						name={cmd.name}
+						description={cmd.description}
+						category="Diversão"
+						categoryColor="bg-yellow-400"
+						bordColor="border-yellow-500"
+					/>
+				))}
+			</article>
+
+			<article className="grid grid-cols-1 p-2 pt-6 gap-6">
+				{/* RPG */}
+				{defaultRPGSection.map((cmd) => (
+					<CommandCard
+						key={cmd.id}
+						name={cmd.name}
+						description={cmd.description}
+						category="RPG"
+						categoryColor="bg-purple-400"
+						bordColor="border-purple-500"
+					/>
+				))}
+			</article>
+			
 		</section>
 	);
 }
