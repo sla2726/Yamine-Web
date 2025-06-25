@@ -76,6 +76,13 @@ function CreditsSection() {
           <p>{short_spa("/termService", "Termos de Serviço")}</p>
           <p>{short_spa("/privacyPolicy", "Política de Privacidade")}</p>
         </div>
+        {/* Páginas */}
+        <h1 className="font-oswald font-bold text-2xl pt-2">
+          Páginas
+        </h1>
+        <div className="grid grid-cols font-sharetech font-semibold text-xl">
+          <p>{short_spa("/commands", "Comandos")}</p>
+        </div>
       </footer>
     </div>
   );
