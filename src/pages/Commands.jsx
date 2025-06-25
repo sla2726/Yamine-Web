@@ -6,7 +6,8 @@ function Commands() {
 		/* Seções de Economia */
 	}
 	const defaultEconomyCommands = economySection.filter((cmd) => cmd.id <= 16);
-	const betEconomyCommands = economySection.filter((cmd) => cmd.id >= 17);
+	const criptoEconomyCommands = economySection.filter((cmd) => cmd.id >= 17);
+	const betEconomyCommands = economySection.filter((cmd) => cmd.id >= 22);
 
 	return (
 		<section className="min-h-screen w-screen bg-snow text-black dark:bg-slate-900 dark:text-white">
@@ -14,8 +15,8 @@ function Commands() {
 				Comandos
 			</h1>
 
-			{/* Economia - Padrão */}
 			<article className="grid grid-cols-1 p-2 gap-6">
+				{/* Economia - Padrão */}
 				{defaultEconomyCommands.map((cmd) => (
 					<CommandCard
 						key={cmd.id}
@@ -27,14 +28,26 @@ function Commands() {
 						bordColor="border-emerald-500"
 					/>
 				))}
-
-				{betEconomyCommands.map((cmd) => (
+				{/* Economia - Criptomoedas */}
+				{criptoEconomyCommands.map((cmd) => (
 					<CommandCard
 						key={cmd.id}
 						name={cmd.name}
 						description={cmd.description}
 						category="Economia - Criptomoedas"
 						categoryColor="bg-emerald-900"
+						bgColor="bg-slate-500"
+						bordColor="border-emerald-500"
+					/>
+				))}
+				{/* Economia - Apostas */}
+				{betEconomyCommands.map((cmd) => (
+					<CommandCard
+						key={cmd.id}
+						name={cmd.name}
+						description={cmd.description}
+						category="Economia - Apostas"
+						categoryColor="bg-fuchsia-900"
 						bgColor="bg-slate-500"
 						bordColor="border-emerald-500"
 					/>

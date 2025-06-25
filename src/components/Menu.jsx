@@ -22,12 +22,12 @@ function Menu() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <div className="p-2 bg-blue-300 relative">
+    <div className="p-2 z-50 top-0 left-0 w-full bg-blue-300 fixed">
       {/* Título */}
       <h1 className="text-2xl font-oswald font-extrabold absolute inset-0 flex justify-center items-center pointer-events-none">
         <Link to="/" className="pointer-events-auto uppercase">Yamine</Link>
       </h1>
-
+      
       {/* Button dark/light theme */}
       <button onClick={() => setIsDarkMode((prev) => !prev)}>
         <ThemeAnimation isDarkMode={isDarkMode} />

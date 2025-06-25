@@ -103,5 +103,35 @@
 		"id": 21,
 		"name": "btcstatus",
 		"description": "Exibe sua quantia de bitcoin."
+	},
+	{
+		"id": 22,
+		"name": "slots",
+		"description": "O clássico minigame Slot Machine, ou caça-níqueis em português."
+	},
+	{
+		"id": 23,
+		"name": "foguete",
+		"description": "Um minigame de foguete, você clica em um botão e o multiplicador de flocos aumenta; o foguete pode cair..."
+	},
+	{
+		"id": 24,
+		"name": "mines",
+		"description": "Basicamente um campo minado, só que apostando."
+	},
+	{
+		"id": 25,
+		"name": "apostar",
+		"description": "Aposte flocos entre algum usuário. "
+	},
+	{
+		"id": 26,
+		"name": "colisseu",
+		"description": "Basicamente uma rinha, só que global."
+	},
+	{
+		"id": 27,
+		"name": "dados",
+		"description": "Um simples jogo de dados, o jogador com mais pontos vence."
 	}
 ]

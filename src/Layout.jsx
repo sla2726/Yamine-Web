@@ -5,7 +5,9 @@ function Layout() {
   return (
     <div className="h-screen w-screen min-h-screen">
       <Menu />
-      <Outlet />
+      <main className="pt-[54px]">
+        <Outlet />
+      </main>
     </div>
   );
 }
