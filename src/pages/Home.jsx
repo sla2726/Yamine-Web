@@ -8,7 +8,7 @@ function Home() {
     "https://discord.com/oauth2/authorize?client_id=943330773916876820&scope=bot&permissions=8";
 
   return (
-    <div className="h-screen w-screen min-h-screen transition-all bg-snow text-black dark:bg-slate-900 dark:text-white">
+    <div className="w-screen min-h-screen transition-all bg-snow text-black dark:bg-slate-900 dark:text-white">
       {/* Textos de Apresentação */}
       <section className="p-6 mx-auto max-w-xl space-y-2 flex flex-col">
         <h2 className="text-2xl font-bold font-sharetech text-left w-fit self-start">

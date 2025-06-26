@@ -23,7 +23,7 @@ function FeatureSection() {
   return (
     <div>
       {/* Textos de Explicação - Entrada */}
-      <section className="mt-16 dark:blue bg-blue-300 p-2 flex flex-col items-center">
+      <section className="mt-16 bg-blue-500 p-2 flex flex-col items-center">
         <h2 className="text-center text-xl font-sharetech font-bold">
           O que posso fazer por você?
         </h2>
@@ -45,7 +45,7 @@ function FeatureSection() {
       </section>
 
       {/* Textos de Explicação - Começo */}
-      <section className="font-oswald font-bold text-2xl ml-5 mt-12 italic text-blue-600 dark:text-blue-300">
+      <section className="font-oswald font-bold text-2xl ml-5 mt-12 italic text-blue-600 dark:text-blue-300 pt-4">
         <aside>Economia</aside>
       </section>
 
@@ -58,11 +58,13 @@ function FeatureSection() {
           encontrará por aqui!
         </article>
         {/* Embed discord */}
-        <Embed />
+        <div className="pt-4">
+          <Embed />
+        </div>
       </section>
 
       {/* Falando sobre o "geral" do bot */}
-      <section className="font-oswald font-bold text-2xl ml-5 mt-5 italic text-blue-600 dark:text-blue-300">
+      <section className="font-oswald font-bold text-2xl ml-5 mt-5 italic text-blue-600 dark:text-blue-300 pt-4">
         <aside>E muito mais!</aside>
       </section>
 
@@ -71,6 +73,18 @@ function FeatureSection() {
           Tenho muitos outros comandos esperando por você! Me {short_adicione}{" "}
           no seu servidor e confira todos eles!
         </article>
+      </section>
+
+      <section className="flex flex-col pt-16 pl-3 justify-center items-center">
+        <h1 className="font-oswald font-bold text-2xl">
+          Alguns servidores que me usam!
+        </h1>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6">
+          <img src="image/server1.png" alt="Paraíso do Betting Money" className="rounded-full w-64 h-48 object-cover shadow-md" />
+          <img src="image/server2.png" alt="Chv" className="rounded-full w-64 h-48 object-cover shadow-md" />
+          <img src="image/server3.png" alt="GamePark ® CZ/SK" className="rounded-full w-64 h-48 object-cover shadow-md" />
+          <img src="image/server4.png" alt="Cassino NovaEra" className="rounded-full w-64 h-48 object-cover shadow-md" />
+        </div>
       </section>
     </div>
   );
