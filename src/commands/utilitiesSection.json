@@ -2,86 +2,103 @@
   {
     "id": 1,
     "name": "serverinfo",
-    "description": "Mostra informações detalhadas sobre o servidor atual."
+    "description": "Mostra informações detalhadas sobre o servidor atual.",
+    "category": "Utilitários"
   },
   {
     "id": 2,
     "name": "ping",
-    "description": "Exibe a latência de resposta atual do Yamine."
+    "description": "Exibe a latência de resposta atual do Yamine.",
+    "category": "Utilitários"
   },
   {
     "id": 3,
     "name": "avatar",
-    "description": "Mostra o avatar de um usuário mencionado ou seu próprio."
+    "description": "Mostra o avatar de um usuário mencionado ou seu próprio.",
+    "category": "Utilitários"
   },
   {
     "id": 4,
     "name": "servericon",
-    "description": "Exibe o ícone atual do servidor."
+    "description": "Exibe o ícone atual do servidor.",
+    "category": "Utilitários"
   },
   {
     "id": 5,
     "name": "botinfo",
-    "description": "Fornece informações gerais sobre o Yamine, como uptime e número de servidores."
+    "description": "Fornece informações gerais sobre o Yamine, como uptime e número de servidores.",
+    "category": "Utilitários"
   },
   {
     "id": 6,
     "name": "banner",
-    "description": "Mostra o banner de perfil de um usuário, se houver."
+    "description": "Mostra o banner de perfil de um usuário, se houver.",
+    "category": "Utilitários"
   },
   {
     "id": 7,
     "name": "emojiinfo",
-    "description": "Mostra informações detalhadas sobre um emoji específico do servidor."
+    "description": "Mostra informações detalhadas sobre um emoji específico do servidor.",
+    "category": "Utilitários"
   },
   {
     "id": 8,
     "name": "userinfo",
-    "description": "Exibe informações completas sobre um usuário mencionado, como ID e entrada no servidor."
+    "description": "Exibe informações completas sobre um usuário mencionado, como ID e entrada no servidor.",
+    "category": "Utilitários"
   },
   {
     "id": 9,
     "name": "channelinfo",
-    "description": "Mostra dados do canal atual ou de um canal mencionado, como ID e permissões."
+    "description": "Mostra dados do canal atual ou de um canal mencionado, como ID e permissões.",
+    "category": "Utilitários"
   },
   {
     "id": 10,
     "name": "roleinfo",
-    "description": "Exibe detalhes sobre um cargo do servidor, como permissões, cor e membros."
+    "description": "Exibe detalhes sobre um cargo do servidor, como permissões, cor e membros.",
+    "category": "Utilitários"
   },
   {
     "id": 11,
     "name": "calcular",
-    "description": "Resolve uma equação matemática básica enviada pelo usuário."
+    "description": "Resolve uma equação matemática básica enviada pelo usuário.",
+    "category": "Utilitários"
   },
   {
     "id": 12,
     "name": "afk",
-    "description": "Define um status de ausência visível para os demais usuários do servidor."
+    "description": "Define um status de ausência visível para os demais usuários do servidor.",
+    "category": "Utilitários"
   },
   {
     "id": 13,
     "name": "convite",
-    "description": "Gera um link para adicionar o Yamine ao seu servidor e acessar o servidor de suporte."
+    "description": "Gera um link para adicionar o Yamine ao seu servidor e acessar o servidor de suporte.",
+    "category": "Utilitários"
   },
   {
     "id": 14,
     "name": "gpt",
-    "description": "Faz uma pergunta e recebe uma resposta gerada por IA."
+    "description": "Faz uma pergunta e recebe uma resposta gerada por IA.",
+    "category": "Utilitários"
   },
   {
     "id": 15,
     "name": "youtube",
-    "description": "Procura um vídeo no YouTube com base na palavra-chave fornecida."
+    "description": "Procura um vídeo no YouTube com base na palavra-chave fornecida.",
+    "category": "Utilitários"
   },
   {
     "id": 16,
     "name": "corinfo",
-    "description": "Mostra dados detalhados sobre uma cor em hexadecimal ou RGB."
+    "description": "Mostra dados detalhados sobre uma cor em hexadecimal ou RGB.",
+    "category": "Utilitários"
   },
   {
     "id": 17,
     "name": "say",
-    "description": "Faz o Yamine repetir exatamente a mensagem fornecida."
+    "description": "Faz o Yamine repetir exatamente a mensagem fornecida.",
+    "category": "Utilitários"
   }
 ]

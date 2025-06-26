@@ -39,7 +39,9 @@ function Home() {
       </section>
 
       {/* Seção - Textos de explicação */}
-      <FeatureSection />
+      <div className="">
+        <FeatureSection />
+      </div>
 
       {/* Seção - Créditos */}
       <CreditsSection />

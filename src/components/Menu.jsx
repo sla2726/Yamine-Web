@@ -6,7 +6,12 @@ import MenuItems from "./MenuItems";
 
 function Menu() {
   // Light/Dark mode
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) return savedTheme === "dark";
+
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+  })
 
   useEffect(() => {
     if (isDarkMode) {

@@ -2,136 +2,163 @@
 	{
 		"id": 1,
 		"name": "carteiradetrabalho",
-		"description": "Mostra informações sobre salário, cargo e nível."
+		"description": "Mostra informações sobre salário, cargo e nível.",
+		"category": "Economia"
 	},
 	{
 		"id": 2,
 		"name": "crime",
-		"description": "Comete um crime e ganha os flocos roubados; tem chances de falha(-15k)."
+		"description": "Comete um crime e ganha os flocos roubados; tem chances de falha(-15k).",
+		"category": "Economia"
 	},
 	{
 		"id": 3,
 		"name": "diário",
-		"description": "Fornece uma quantia aleatória de flocos por dia."
+		"description": "Fornece uma quantia aleatória de flocos por dia.",
+		"category": "Economia"
 	},
 	{
 		"id": 4,
 		"name": "estatísticas",
-		"description": "Exibe estatísticas sobre alguns comandos de aposta."
+		"description": "Exibe estatísticas sobre alguns comandos de aposta.",
+		"category": "Economia"
 	},
 	{
 		"id": 5,
 		"name": "explorar",
-		"description": "Faça uma exploração e receba alguns flocos."
+		"description": "Faça uma exploração e receba alguns flocos.",
+		"category": "Economia"
 	},
 	{
 		"id": 6,
 		"name": "lembretes",
-		"description": "Exibe os lembretes ativos; alguns comandos com cooldown fornecem um botão de lembrete."
+		"description": "Exibe os lembretes ativos; alguns comandos com cooldown fornecem um botão de lembrete.",
+		"category": "Economia"
 	},
 	{
 		"id": 7,
 		"name": "pagar",
-		"description": "Pague determinada quantia de flocos a alguém."
+		"description": "Pague determinada quantia de flocos a alguém.",
+		"category": "Economia"
 	},
 	{
 		"id": 8,
 		"name": "patrocinar",
-		"description": "Faça um patrocínio/sorteio de flocos em algum lugar."
+		"description": "Faça um patrocínio/sorteio de flocos em algum lugar.",
+		"category": "Economia"
 	},
 	{
 		"id": 9,
 		"name": "rank",
-		"description": "Exibe o ranking dos usuários com mais flocos."
+		"description": "Exibe o ranking dos usuários com mais flocos.",
+		"category": "Economia"
 	},
 	{
 		"id": 10,
 		"name": "saldo",
-		"description": "Exibe o saldo de determinado usuário."
+		"description": "Exibe o saldo de determinado usuário.",
+		"category": "Economia"
 	},
 	{
 		"id": 11,
 		"name": "tarefas",
-		"description": "Exibe as tarefas diárias do dia; fornece flocos ao completar alguma."
+		"description": "Exibe as tarefas diárias do dia; fornece flocos ao completar alguma.",
+		"category": "Economia"
 	},
 	{
 		"id": 12,
 		"name": "tempos",
-		"description": "Exibe o cooldown de todos os comandos que possuem um."
+		"description": "Exibe o cooldown de todos os comandos que possuem um.",
+		"category": "Economia"
 	},
 	{
 		"id": 13,
 		"name": "trabalhar",
-		"description": "Trabalhe e ganhe flocos."
+		"description": "Trabalhe e ganhe flocos.",
+		"category": "Economia"
 	},
 	{
 		"id": 14,
 		"name": "transações",
-		"description": "Exibe todas as suas transações."
+		"description": "Exibe todas as suas transações.",
+		"category": "Economia"
 	},
 	{
 		"id": 15,
 		"name": "vip",
-		"description": "Exibe informações sobre a compra do VIP."
+		"description": "Exibe informações sobre a compra do VIP.",
+		"category": "Economia"
 	},
 	{
 		"id": 16,
 		"name": "votar",
-		"description": "Fornece flocos ao votar no Yamine na top.gg."
+		"description": "Fornece flocos ao votar no Yamine na top.gg.",
+		"category": "Economia"
 	},
 	{
 		"id": 17,
 		"name": "bitcoin",
-		"description": "Fornece informações sobre a mineração dos bitcoins."
+		"description": "Fornece informações sobre a mineração dos bitcoins.",
+		"category": "Criptomoedas"
 	},
 	{
 		"id": 18,
 		"name": "broker",
-		"description": "Exibe o valor atual do bitcoin."
+		"description": "Exibe o valor atual do bitcoin.",
+		"category": "Criptomoedas"
 	},
 	{
 		"id": 19,
 		"name": "investir",
-		"description": "Permite a compra de bitcoin."
+		"description": "Permite a compra de bitcoin.",
+		"category": "Criptomoedas"
 	},
 	{
 		"id": 20,
 		"name": "converter",
-		"description": "Converte o bitcoin em flocos."
+		"description": "Converte o bitcoin em flocos.",
+		"category": "Criptomoedas"
 	},
 	{
 		"id": 21,
 		"name": "btcstatus",
-		"description": "Exibe sua quantia de bitcoin."
+		"description": "Exibe sua quantia de bitcoin.",
+		"category": "Criptomoedas"
 	},
 	{
 		"id": 22,
 		"name": "slots",
-		"description": "O clássico minigame Slot Machine, ou caça-níqueis em português."
+		"description": "O clássico minigame Slot Machine, ou caça-níqueis em português.",
+		"category": "Apostas"
 	},
 	{
 		"id": 23,
 		"name": "foguete",
-		"description": "Um minigame de foguete, você clica em um botão e o multiplicador de flocos aumenta; o foguete pode cair..."
+		"description": "Um minigame de foguete, você clica em um botão e o multiplicador de flocos aumenta; o foguete pode cair...",
+		"category": "Apostas"
 	},
 	{
 		"id": 24,
 		"name": "mines",
-		"description": "Basicamente um campo minado, só que apostando."
+		"description": "Basicamente um campo minado, só que apostando.",
+		"category": "Apostas"
 	},
 	{
 		"id": 25,
 		"name": "apostar",
-		"description": "Aposte flocos entre algum usuário. "
+		"description": "Aposte flocos entre algum usuário.",
+		"category": "Apostas"
 	},
 	{
 		"id": 26,
 		"name": "colisseu",
-		"description": "Basicamente uma rinha, só que global."
+		"description": "Basicamente uma rinha, só que global.",
+		"category": "Apostas"
 	},
 	{
 		"id": 27,
 		"name": "dados",
-		"description": "Um simples jogo de dados, o jogador com mais pontos vence."
+		"description": "Um simples jogo de dados, o jogador com mais pontos vence.",
+		"category": "Apostas"
 	}
 ]
