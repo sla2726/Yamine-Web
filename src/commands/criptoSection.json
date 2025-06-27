@@ -1,0 +1,32 @@
+[
+	{
+		"id": 17,
+		"name": "bitcoin",
+		"description": "Fornece informações sobre a mineração dos bitcoins.",
+		"category": "Criptomoedas"
+	},
+	{
+		"id": 18,
+		"name": "broker",
+		"description": "Exibe o valor atual do bitcoin.",
+		"category": "Criptomoedas"
+	},
+	{
+		"id": 19,
+		"name": "investir",
+		"description": "Permite a compra de bitcoin.",
+		"category": "Criptomoedas"
+	},
+	{
+		"id": 20,
+		"name": "converter",
+		"description": "Converte o bitcoin em flocos.",
+		"category": "Criptomoedas"
+	},
+	{
+		"id": 21,
+		"name": "btcstatus",
+		"description": "Exibe sua quantia de bitcoin.",
+		"category": "Criptomoedas"
+	}
+]

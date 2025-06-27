@@ -2,69 +2,52 @@ import { useState, useMemo } from "react";
 import { Search } from "lucide-react";
 import CommandCard from "../components/CommandCard";
 import economySection from "../commands/economySection.json";
+import criptoSection from "../commands/criptoSection.json";
+import betSection from "../commands/betSection.json";
 import utilitiesSection from "../commands/utilitiesSection.json";
 import funSection from "../commands/funSection.json";
 import rpgSection from "../commands/rpgSection.json";
 
 function Commands() {
-	{
-		/* Seções de Economia - Ordem alfabética */
-	}
+	// Seções de Economia - Ordem alfabética
 	const defaultEconomyCommands = useMemo(
-		() =>
-			economySection
-				.filter((cmd) => cmd.category === "Economia")
-				.sort((a, b) => a.name.localeCompare(b.name)),
-		[],
+		() => [...economySection].sort((a, b) => a.name.localeCompare(b.name)),
+		[economySection],
 	);
 
 	const criptoEconomyCommands = useMemo(
-		() =>
-			economySection
-				.filter((cmd) => cmd.category === "Criptomoedas")
-				.sort((a, b) => a.name.localeCompare(b.name)),
-		[],
+		() => [...criptoSection].sort((a, b) => a.name.localeCompare(b.name)),
+		[criptoSection],
 	);
 
 	const betEconomyCommands = useMemo(
-		() =>
-			economySection
-				.filter((cmd) => cmd.category === "Apostas")
-				.sort((a, b) => a.name.localeCompare(b.name)),
-		[],
+		() => [...betSection].sort((a, b) => a.name.localeCompare(b.name)),
+		[betSection],
 	);
 
-	{
-		/* Seção de Utilitários - Ordem alfabética */
-	}
+	// Seção de Utilitários - Ordem alfabética
 	const defaultUtilitiesSection = useMemo(
 		() => [...utilitiesSection].sort((a, b) => a.name.localeCompare(b.name)),
-		[],
+		[utilitiesSection],
 	);
 
-	{
-		/* Seção de Diversão - Ordem alfabética */
-	}
+	// Seção de Diversão - Ordem alfabética
 	const defaultFunSection = useMemo(
 		() => [...funSection].sort((a, b) => a.name.localeCompare(b.name)),
-		[],
+		[funSection],
 	);
 
-	{
-		/* Seção de RPG - Ordem alfabética */
-	}
+	// Seção de RPG - Ordem alfabética
 	const defaultRPGSection = useMemo(
 		() => [...rpgSection].sort((a, b) => a.name.localeCompare(b.name)),
-		[],
+		[rpgSection],
 	);
 
-	{
-		/* Barra de Pesquisa */
-	}
+	// Barra de Pesquisa
 	const [searchCommand, setSearchCommand] = useState("");
 
 	const allCommands = useMemo(() => {
-		const merged = [
+		return [
 			...defaultEconomyCommands,
 			...criptoEconomyCommands,
 			...betEconomyCommands,
@@ -72,12 +55,6 @@ function Commands() {
 			...defaultRPGSection,
 			...defaultFunSection,
 		];
-		const uniqueMap = new Map();
-		merged.forEach((cmd) => {
-			uniqueMap.set(cmd.id, cmd); // ID deve ser único
-		});
-
-		return Array.from(uniqueMap.values());
 	}, [
 		defaultEconomyCommands,
 		criptoEconomyCommands,
@@ -90,7 +67,7 @@ function Commands() {
 	const filteredCommands = useMemo(
 		() =>
 			allCommands.filter((cmd) =>
-				cmd.name.toLowerCase().includes(searchCommand.toLowerCase()),
+				cmd.name.toLowerCase().startsWith(searchCommand.toLowerCase()),
 			),
 		[allCommands, searchCommand],
 	);
@@ -187,7 +164,7 @@ function Commands() {
 						const { category, categoryColor, bordColor } = getCommandStyle(cmd);
 						return (
 							<CommandCard
-								key={cmd.id}
+								key={cmd.name}
 								name={cmd.name}
 								description={cmd.description}
 								category={category}
@@ -211,7 +188,7 @@ function Commands() {
 									getCommandStyle(cmd);
 								return (
 									<CommandCard
-										key={cmd.id}
+										key={cmd.name}
 										name={cmd.name}
 										description={cmd.description}
 										category={category}

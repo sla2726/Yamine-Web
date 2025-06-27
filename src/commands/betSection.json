@@ -1,0 +1,38 @@
+[
+	{
+		"id": 22,
+		"name": "slots",
+		"description": "O clássico minigame Slot Machine, ou caça-níqueis em português.",
+		"category": "Apostas"
+	},
+	{
+		"id": 23,
+		"name": "foguete",
+		"description": "Um minigame de foguete, você clica em um botão e o multiplicador de flocos aumenta; o foguete pode cair...",
+		"category": "Apostas"
+	},
+	{
+		"id": 24,
+		"name": "mines",
+		"description": "Basicamente um campo minado, só que apostando.",
+		"category": "Apostas"
+	},
+	{
+		"id": 25,
+		"name": "apostar",
+		"description": "Aposte flocos entre algum usuário.",
+		"category": "Apostas"
+	},
+	{
+		"id": 26,
+		"name": "colisseu",
+		"description": "Basicamente uma rinha, só que global.",
+		"category": "Apostas"
+	},
+	{
+		"id": 27,
+		"name": "dados",
+		"description": "Um simples jogo de dados, o jogador com mais pontos vence.",
+		"category": "Apostas"
+	}
+]
