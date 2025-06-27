@@ -57,7 +57,7 @@ function Embed() {
       <h1 className="font-oswald font-bold">Um dos comandos!</h1>
 
       {/* Título & Container principal */}
-      <div className="max-w-lg w-full bg-gray-400 dark:bg-gray-600 border-l-4 border-blue-300 rounded-md p-4">
+      <div className="max-w-lg w-full bg-gray-500 dark:bg-gray-700 border-l-4 border-blue-300 rounded-md p-4">
         <header>
           <h1 className="text-white dark:text-black text-lg font-oswald font-bold">
             Yamine Broker
