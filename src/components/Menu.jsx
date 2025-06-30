@@ -56,7 +56,7 @@ function Menu() {
           Menu
         </h2>
 
-        <div className="text-black dark:text-white bg-white dark:bg-slate-800 border-white border-b-4 border-t-4 rounded-md w-3/4 mt-7 ml-5 p-2">
+        <div className="text-black dark:text-white bg-white dark:bg-slate-800 border-white border-b-4 border-t-4 rounded-md w-3/4 mt-7 ml-5 py-4 p-2 shadow-md">
           <MenuItems />
         </div>
       </div>

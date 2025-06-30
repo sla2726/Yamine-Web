@@ -1,0 +1,34 @@
+[
+	{
+		"name": "Sem taxas",
+		"description": "Remova completamente todas as taxas em apostas."
+	},
+	{
+		"name": "2x flocos",
+		"description": "Ganhe bônus de 100% em comandos resgatáveis."
+	},
+	{
+		"name": "Modificar emojis",
+		"description": "Escolha emojis personalizados para suas apostas."
+	},
+	{
+		"name": "Cargos/Canais",
+		"description": "Tenha acesso a cargos e canais exclusivos."
+	},
+	{
+		"name": "Avatares e banners",
+		"description": "Tenha avatares e banners personalizados para decorar seu perfil (rpg e social)."
+	},
+	{
+		"name": "Sorteios",
+		"description": "Sorteios exclusivos para membros premium."
+	},
+	{
+		"name": "Claim",
+		"description": "Acesso ao comando de resgate VIP + outros comandos exclusivos."
+	},
+	{
+		"name": "200x de energia",
+		"description": "Ao invés de começar com 100, você começa com 200 e pode apostar mais vezes."
+	}
+]

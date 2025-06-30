@@ -13,7 +13,7 @@ export default {
       },
       colors: {
         snow: "#F0F8FF",
-        darkBlue: "#1E293B",
+        darkBlue: "#0f172a",
       },
     },
   },
