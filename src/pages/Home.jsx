@@ -1,4 +1,4 @@
-import { AlignJustify, CircleX, BotMessageSquare, House } from "lucide-react";
+import { ShoppingCart, BotMessageSquare, House } from "lucide-react";
 import FeatureSection from "../sections/FeatureSection";
 import CreditsSection from "../sections/CreditsSection";
 
@@ -38,9 +38,25 @@ function Home() {
         </a>
       </section>
 
+      <section className="flex flex-col p-6 mx-auto max-w-xl">
+        <h1 className="font-sharetech font-semibold text-2xl">
+          O Yamine também tem uma lojinha de flocos(moeda do bot), sabia? Entre
+          lá agora mesmo pelo Discord!
+        </h1>
+        <a
+          href="https://discord.gg/uwW6JNm9JH"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center text-2xl font-sharetech bg-blue-400 p-2 rounded-md hover:underline hover:text-blue-700 transition-colors"
+        >
+          <span className="mr-2"><ShoppingCart/></span>
+          Lojinha!
+        </a>
+      </section>
+
       {/* Seção - Textos de explicação */}
       <FeatureSection />
-      
+
       {/* Seção - Créditos */}
       <CreditsSection />
     </div>

@@ -54,8 +54,8 @@ function CreditsSection() {
         <div className="grid grid-cols font-sharetech font-semibold text-xl">
           <p>Site: {user_void}</p>
           <p>Bot: {user_mistic}</p>
-          <p>Designer: {user_jhow}</p>
-          <p>Designer: {user_naosoufioti}</p>
+          <p>Designer(bot): {user_jhow}</p>
+          <p>Designer(bot): {user_naosoufioti}</p>
         </div>
         {/* Suporte */}
         <h1 className="font-oswald font-bold text-2xl pt-2">Suporte</h1>
@@ -81,7 +81,10 @@ function CreditsSection() {
           Páginas
         </h1>
         <div className="grid grid-cols font-sharetech font-semibold text-xl">
+          <p>{short_spa("/", "Início")}</p>
           <p>{short_spa("/commands", "Comandos")}</p>
+          <p>{short_spa("/premium", "Premium")}</p>
+
         </div>
       </footer>
     </div>
