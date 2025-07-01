@@ -40,7 +40,7 @@ function Home() {
 
       <section className="flex flex-col p-6 mx-auto max-w-xl">
         <h1 className="font-sharetech font-semibold text-2xl">
-          O Yamine também tem uma lojinha de flocos(moeda do bot), sabia? Entre
+          O Yamine também tem uma lojinha de flocos, sabia? Entre
           lá agora mesmo pelo Discord!
         </h1>
         <a
